@@ -12,8 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: whitesmoke;
-  color: rgb(14, 14, 14);
+  background-color: darkgreen;
+  color: whitesmoke;
 }
 
 body,
@@ -23,6 +23,10 @@ html {
 
 h1 {
   text-align: center;
+}
+
+p {
+  background-color: black;
 }
 
 .teams {

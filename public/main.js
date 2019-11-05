@@ -41,21 +41,27 @@ const addTeam2Score = () => {
 
 // Update Teams' Score When Subtract Button Clicked
 const subtractTeam1Score = () => {
-  console.log('clicked update team 1 subtract S C O R E button')
-  team1Score = team1Score - incrementAmt
-  document.querySelector('.team-1-score').textContent = team1Score
+  if (team1Score > 0) {
+    console.log('clicked update team 1 subtract S C O R E button')
+    team1Score = team1Score - incrementAmt
+    document.querySelector('.team-1-score').textContent = team1Score
+  }
 }
 const subtractTeam2Score = () => {
-  console.log('clicked update team TWO subtract S C O R E button ')
-  team2Score = team2Score - incrementAmt
-  document.querySelector('.team-2-score').textContent = team2Score
+  if (team2Score > 0) {
+    console.log('clicked update team TWO subtract S C O R E button ')
+    team2Score = team2Score - incrementAmt
+    document.querySelector('.team-2-score').textContent = team2Score
+  }
 }
 
 // Update Game Quarters
 const subtractQuarter = () => {
-  console.log('clicked subtract quarter button')
-  quarterNumber = quarterNumber - 1
-  document.querySelector('.quarter-number').textContent = quarterNumber
+  if (quarterNumber > 1) {
+    console.log('clicked subtract quarter button')
+    quarterNumber = quarterNumber - 1
+    document.querySelector('.quarter-number').textContent = quarterNumber
+  }
 }
 const addQuarter = () => {
   console.log('clicked subtract quarter button')
